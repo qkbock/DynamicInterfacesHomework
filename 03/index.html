@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title>My Bouncing Ball</title>
+		<link type="stylesheet" rel="stylesheet" href="./css/stylesheet.css" />
+		<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+		<script>
+			document.getElementById("box");
+
+			var xLoc = 1;
+			var yLoc = 1;
+			var xStep = 3;
+			var yStep = 5;
+			
+			var rotation = 0;
+			
+			function walls(){
+			    if(xLoc > 180){
+			    xStep*=-1;
+			    }
+			    if(yLoc > 190){
+			        yStep*=-1;
+			    }
+			    if(xLoc < 1){
+			        xStep*=-1;
+			    }
+			    if(yLoc < 1){
+			        yStep*=-1;
+			    }
+			}
+			
+			function update() {
+			    walls();
+			    
+			    xLoc += xStep;
+			    yLoc += yStep;
+			    
+			    box.style.marginLeft = xLoc +"px";
+			    box.style.marginTop = yLoc +"px";
+			    
+			    box.style.webkitTransform = "rotate("+ rotation +"deg)";
+			    rotation += 5;   
+			}
+			
+			
+			setInterval(update, 1000/10);
+		</script>
+	</head>
+	<body>
+		<div id="bigBox">
+	        <div id="box">    </div>
+	    </div>
+	    <p><a href="hat.html">Click here</a> to go to a page that does not exist... or does it?</p>
+	</body>
+</html>

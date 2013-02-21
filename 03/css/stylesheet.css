@@ -1,0 +1,49 @@
+body {
+    background:aquamarine;
+}
+
+body#white{
+	background: white;
+}
+
+
+#box{
+    width: 20px;
+    height: 20px;
+    background:deeppink; 
+    margin: 100px;
+    border-radius:5px;
+    border:dotted 3px;
+    border-color:white;
+    margin-right:0px;
+    margin-bottom:0px;
+    box-shadow: 3px 3px 8px #888888;
+
+}
+
+#bigBox{
+    border:double 3px;
+    background-color: whiteSmoke;
+    width:210px;
+    height:215px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+p{
+	width: 400px;
+	margin: auto;
+	margin-top: 30px;
+}
+
+h1{
+	margin-top: 40px;
+}
+
+h2{
+	margin-top: 50px;
+}
+
+img{
+	margin-top: 0px;
+}
