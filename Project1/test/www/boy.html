@@ -33,7 +33,7 @@ socket.on('user left',function(username) {
 					appendMessage(data.username,data.message,["is-someone-else"]);
 				});
 
-				var username = "Boy"; 
+				var username = "What would you like to be called?"; 
 				var room = false;
 
 				// adding messages
@@ -75,7 +75,7 @@ socket.on('user left',function(username) {
 
 				// changing usernames
 				$("#usernameButton").click(function() {
-						var textBox = document.getElementById("username");
+						var textBox = document.getElementById("boyUsernameInput");
 						var newUsername = $.trim($(textBox).val());
 						if(newUsername != "") {
 							var data = {};
@@ -112,14 +112,16 @@ socket.on('user left',function(username) {
 					return false;
 				})
 
-				$("#username").val(username);
-				$("select").trigger("change"); // force the lobby to be selected.
+				$("#boyUsernameInput").val(username);
+				$('#password').val("Password");
+				//$("select").trigger("change"); // force the lobby to be selected.
 			});
 		</script>
 	</head>
 	<body>
+		<img id ="logo" src="images/logo.png">
 		<div id="login">
-			<p><input type="text" id="username" /> <button id="usernameButton">Change Your Name</button></p>
+			<p><input type="text" id="boyUsernameInput" /> <button id="usernameButton">Change Your Name</button></p>
 			<p><input type="text" id="password" /> <button id="passwordButton">Input your password to chat</button></p>
 			<!--
 <p>

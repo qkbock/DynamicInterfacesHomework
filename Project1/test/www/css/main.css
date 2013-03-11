@@ -3,6 +3,8 @@ body {
 	width:100%;
 	height:100%;
 	font-family: Arial;
+	background: black;
+	zoom: reset;
 }
 
 #chat {
@@ -39,8 +41,17 @@ body {
 	background:yellow;
 }
 
-#username {
+#girlUsernameInput {
 	width:20%;
+	height: 20%;
+	background: #B1009B; 
+}
+
+#boyUsernameInput{
+	width:20%;
+	height: 20%;
+	background: #06266F;
+
 }
 
 #chatbox {
@@ -48,4 +59,9 @@ body {
 	border:1px solid black;	
 	font-size:20px;
 	padding:5px;
+}
+
+img#logo{
+	width: 25%;
+	margin:auto;
 }
