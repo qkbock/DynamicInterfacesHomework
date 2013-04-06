@@ -1,0 +1,3 @@
+[submodule "decodeHER"]
+	path = decodeHER
+	url = https://github.com/navit/decodeHER.git
