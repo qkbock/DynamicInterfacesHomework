@@ -12,7 +12,7 @@ int winningNumber = 10;
 
 void setup() {
   myOscP5 = new OscP5(this, 30010);
-  myRemoteLocation = new NetAddress("127.0.0.1", 30011);
+  myRemoteLocation = new NetAddress("169.254.87.30", 30011);
   frameRate(60);
   
   size(600, 200);
